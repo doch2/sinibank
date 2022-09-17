@@ -51,8 +51,8 @@ class AuthService {
     } else {
       await writeAccountInfo();
     }
-    Get.toNamed(PageRoutes.HOME);
     isLogin = true;
+    Get.toNamed(PageRoutes.HOME);
   }
 
   void signInWithApple() async {
@@ -80,8 +80,8 @@ class AuthService {
       } else {
         await writeAccountInfo();
       }
-      Get.toNamed(PageRoutes.HOME);
       isLogin = true;
+      Get.toNamed(PageRoutes.HOME);
     } catch(error) {
       print(error);
     }
