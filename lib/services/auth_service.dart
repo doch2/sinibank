@@ -48,6 +48,7 @@ class AuthService {
 
     if (await _firestoreDatabase.isAlreadyRegisterUser(loginUserInfo["userid"])) {
       //await _apiProvider.userLogin("google", loginUserInfo["userid"]);
+      user = await _firestoreDatabase.getUser(loginUserInfo["userid"]);
     } else {
       await writeAccountInfo();
     }
@@ -77,6 +78,7 @@ class AuthService {
 
       if (await _firestoreDatabase.isAlreadyRegisterUser(loginUserInfo["userid"])) {
         //await _apiProvider.userLogin("google", loginUserInfo["userid"]);
+        user = await _firestoreDatabase.getUser(loginUserInfo["userid"]);
       } else {
         await writeAccountInfo();
       }
