@@ -1,16 +1,7 @@
-# sinibank
+# 시니뱅크 (시니어+뱅크)
 
-A new Flutter project.
+물음표를 느낌표로 팀의 [Hello New() World 2022](http://hellonewworld.co.kr/) 대회 작품 시니뱅크입니다.
 
-## Getting Started
+시니뱅크란, 코로나 팬데믹으로 인해 오프라인 점포가 없어져 은행 업무를 보기가 점점 힘들어지는 노인분들 위해 개발한 어플리케이션입니다.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+노인분들이 사용하기 쉽게 어플을 제작하여, 누구나 쉽게 은행 업무를 처리할 수 있습니다.
