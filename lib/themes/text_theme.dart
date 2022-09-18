@@ -8,3 +8,6 @@ final loginPage_subTitle = TextStyle(
     fontSize: 20, color: grayOne, fontWeight: FontWeight.w600, letterSpacing: -0.8);
 final loginPage_loginBtn = TextStyle(
     fontSize: 16, color: Colors.white, fontWeight: FontWeight.w700, letterSpacing: -0.8);
+
+final home_menuTitle = TextStyle(
+    fontSize: 45, color: Colors.white, fontWeight: FontWeight.w600, letterSpacing: -0.8);
