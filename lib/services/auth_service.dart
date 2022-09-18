@@ -48,11 +48,12 @@ class AuthService {
 
     if (await _firestoreDatabase.isAlreadyRegisterUser(loginUserInfo["userid"])) {
       //await _apiProvider.userLogin("google", loginUserInfo["userid"]);
+      user = await _firestoreDatabase.getUser(loginUserInfo["userid"]);
     } else {
       await writeAccountInfo();
     }
-    Get.toNamed(PageRoutes.HOME);
     isLogin = true;
+    Get.toNamed(PageRoutes.HOME);
   }
 
   void signInWithApple() async {
@@ -77,11 +78,12 @@ class AuthService {
 
       if (await _firestoreDatabase.isAlreadyRegisterUser(loginUserInfo["userid"])) {
         //await _apiProvider.userLogin("google", loginUserInfo["userid"]);
+        user = await _firestoreDatabase.getUser(loginUserInfo["userid"]);
       } else {
         await writeAccountInfo();
       }
-      Get.toNamed(PageRoutes.HOME);
       isLogin = true;
+      Get.toNamed(PageRoutes.HOME);
     } catch(error) {
       print(error);
     }

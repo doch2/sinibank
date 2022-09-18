@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
+import 'package:sinibank/services/auth_service.dart';
 
 import '../models/user.dart';
 
@@ -37,6 +38,25 @@ class FirestoreDatabase {
     } catch (e) {
       print(e);
       rethrow;
+    }
+  }
+
+  Future<bool> setOpenApiCode(String code) async {
+    try {
+      await _firestore.collection("users").doc(Get.find<AuthService>().user.id).update({
+        "apiCode": code,
+      });
+
+      Get.find<AuthService>().user = UserModel(
+        id: Get.find<AuthService>().user.id,
+        name: Get.find<AuthService>().user.name,
+        email: Get.find<AuthService>().user.email,
+        apiCode: code
+      );
+      return true;
+    } catch (e) {
+      print(e);
+      return false;
     }
   }
 
