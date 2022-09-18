@@ -35,6 +35,7 @@ Future main() async {
       title: '시니뱅크',
       initialRoute: PageRoutes.HOME,
       getPages: SinibankPages.pages,
+      debugShowCheckedModeBanner: false
     ),
   );
 }
