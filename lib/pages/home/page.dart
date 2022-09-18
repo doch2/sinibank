@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:sinibank/pages/home/widgets/menu_button.dart';
 
+import '../../routes/routes.dart';
 import '../../themes/color_theme.dart';
 import '../../themes/text_theme.dart';
 import 'controller.dart';
@@ -45,7 +46,7 @@ class HomePage extends GetView<HomePageController> {
                       right: -25,
                       child: SvgPicture.asset("assets/images/transfer_image.svg"),
                     ),
-                    clickAction: () => print('onCLick')
+                    clickAction: () => Get.toNamed(PageRoutes.ACCOUNTLIST)
                 ),
                 SizedBox(width: 10),
                 MenuButton(
@@ -56,7 +57,7 @@ class HomePage extends GetView<HomePageController> {
                       right: -35,
                       child: SvgPicture.asset("assets/images/history_image.svg"),
                     ),
-                    clickAction: () => print('onCLick')
+                    clickAction: () => Get.toNamed(PageRoutes.TRANSACTIONLIST)
                 ),
               ],
             ),
@@ -72,7 +73,7 @@ class HomePage extends GetView<HomePageController> {
                     right: -50,
                     child: SvgPicture.asset("assets/images/information_image.svg"),
                   ),
-                  clickAction: () => print('onClinck'),
+                  clickAction: () => Get.toNamed(PageRoutes.FINANCEINFO)
                 ),
                 SizedBox(width: 10),
                 MenuButton(

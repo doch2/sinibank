@@ -33,7 +33,7 @@ class LoginPage extends GetView<LoginPageController> {
                       children: [
                         Text("로그인", style: loginPage_title),
                         SizedBox(height: 12),
-                        Text("시니어를 위한, 시니어를 위한", style: loginPage_subTitle),
+                        Text("시니어를 위한, 시니어에 의한", style: loginPage_subTitle),
                         Text("시니뱅크에 오신 걸 환영합니다!", style: loginPage_subTitle.copyWith(color: blueTwo))
                       ],
                     ),

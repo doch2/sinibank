@@ -53,7 +53,7 @@ class AuthService {
       await writeAccountInfo();
     }
     isLogin = true;
-    Get.toNamed(PageRoutes.HOME);
+    Get.toNamed(PageRoutes.PASSWORDTHEME);
   }
 
   void signInWithApple() async {
@@ -83,7 +83,7 @@ class AuthService {
         await writeAccountInfo();
       }
       isLogin = true;
-      Get.toNamed(PageRoutes.HOME);
+      Get.toNamed(PageRoutes.PASSWORDTHEME);
     } catch(error) {
       print(error);
     }
