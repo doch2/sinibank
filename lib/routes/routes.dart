@@ -10,4 +10,5 @@ abstract class PageRoutes {
   static const PASSWORDTHEME = '/PasswordTheme';
   static const PASSWORDINPUT = '/PasswordInput';
   static const TRANSFERMONEY = '/TransferMoney';
+  static const SELECTACCOUNT = '/SelectAccount';
 }

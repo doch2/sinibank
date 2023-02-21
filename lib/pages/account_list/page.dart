@@ -11,7 +11,7 @@ class AccountListPage extends StatelessWidget {
     return Scaffold(
       body: Center(
           child: GestureDetector(
-            onTap: () => Get.offAndToNamed(PageRoutes.TRANSFERMONEY),
+            onTap: () => Get.offAndToNamed(PageRoutes.SELECTACCOUNT),
             child: ExtendedImage.asset(
               "assets/images/mockup/accountList.png",
               scale: 1.2,

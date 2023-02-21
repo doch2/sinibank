@@ -9,6 +9,9 @@ final loginPage_subTitle = TextStyle(
 final loginPage_loginBtn = TextStyle(
     fontSize: 16, color: Colors.white, fontWeight: FontWeight.w700, letterSpacing: -0.8);
 
+final accountTextField = TextStyle(
+    fontSize: 23, color: Colors.black, fontWeight: FontWeight.w700, letterSpacing: -0.8);
+
 final moneyAmountTextField = TextStyle(
     fontSize: 36, color: Colors.black, fontWeight: FontWeight.w700, letterSpacing: -0.8);
 final moneyAmountTextFieldHintWon = TextStyle(

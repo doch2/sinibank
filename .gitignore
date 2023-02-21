@@ -46,3 +46,5 @@ app.*.map.json
 #Firebase API Key
 google-services.json
 GoogleService-Info.plist
+
+token_reference.dart

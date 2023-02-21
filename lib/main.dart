@@ -9,11 +9,18 @@ import 'package:sinibank/routes/pages.dart';
 import 'package:sinibank/routes/routes.dart';
 import 'package:sinibank/services/auth_service.dart';
 import 'package:sinibank/services/finance_openapi_provider.dart';
+import 'package:sinibank/services/token_reference.dart';
+import 'package:thecheat_flutter/thecheat_flutter.dart';
 import 'package:uni_links/uni_links.dart';
 
 Future main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+
+  TheCheatFlutterPlugin().initializeApp(
+    TokenReference.THECHEAT_API_KEY,
+    TokenReference.THECHEAT_ENC_KEY,
+  );
 
   Get.lazyPut(() => Dio());
   Get.lazyPut(() => FlutterSecureStorage());

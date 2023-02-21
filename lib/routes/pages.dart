@@ -12,6 +12,8 @@ import 'package:sinibank/pages/login/page.dart';
 import 'package:sinibank/pages/password_input/binding.dart';
 import 'package:sinibank/pages/password_input/page.dart';
 import 'package:sinibank/pages/password_theme/page.dart';
+import 'package:sinibank/pages/select_account/binding.dart';
+import 'package:sinibank/pages/select_account/page.dart';
 import 'package:sinibank/pages/transaction_list/page.dart';
 import 'package:sinibank/pages/transfer_money/binding.dart';
 import 'package:sinibank/pages/transfer_money/page.dart';
@@ -30,5 +32,6 @@ class SinibankPages {
     GetPage(name: PageRoutes.PASSWORDTHEME, page: () => const PasswordThemePage()),
     GetPage(name: PageRoutes.PASSWORDINPUT, page: () => const PasswordInputPage(), binding: PasswordInputPageBinding()),
     GetPage(name: PageRoutes.TRANSFERMONEY, page: () => const TransferMoneyPage(), binding: TransferMoneyPageBinding()),
+    GetPage(name: PageRoutes.SELECTACCOUNT, page: () => const SelectAccountPage(), binding: SelectAccountPageBinding()),
   ];
 }
